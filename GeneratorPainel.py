@@ -19,9 +19,21 @@ root.configure(bg='#050605')
 
 
 custom_font = font.Font(family="Courier", size=14)
-custom_font_dois = font.Font(family="Courier", size=6)
+custom_font_dois = font.Font(family="Courier", size=8)
 custom_font_tres = font.Font(family="Courier", size=7)
 
+
+
+kom = ttk.Label(root,
+                text='Coded by \n Komth3 Pedro.',
+                font=custom_font_dois,
+                background='#050605',
+                foreground='#3C3F42'
+                )
+kom.pack(
+    ipadx=5,
+    ipady=5
+)
 
 def atualizar_tempo():
     current_time = time.strftime("%H:%M:%S")
@@ -66,12 +78,12 @@ komthe = ttk.Label(root,
                    font=custom_font_dois
                    )
 komthe.place(
-    x=71,
-    y=100
+    x=1,
+    y=70
 )
 
 output = ttk.Entry(root)
-output.configure(width=30, background='#854EC4', foreground='#580792', font=custom_font)
+output.configure(width=30, background='#854EC4', foreground='#3C3F42', font=custom_font)
 output.place(x=154, y=130)
 
 
